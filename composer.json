@@ -1,0 +1,25 @@
+{
+    "name": "zairigimad/messagebird-notifier",
+    "type": "symfony-bridge",
+    "description": "Symfony MessageBird Notifier Bridge",
+    "keywords": ["sms", "messagebird", "notifier"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Imad ZAIRIG",
+            "email": "imadzairig@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "symfony/http-client": "^4.3|^5.0",
+        "symfony/notifier": "^5.3"
+    },
+    "autoload": {
+        "psr-4": { "Symfony\\Component\\Notifier\\Bridge\\MessageBird\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "dev"
+}
